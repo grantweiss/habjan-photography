@@ -2,7 +2,7 @@
 # README
 
 This README would normally document whatever steps are necessary to get the
-application up and running. This is a site for the photography of Chris Habjan
+application up and running. This is a site for the photography of Chris Habjan. All photos and material are subject to his ownership
 
 Things you may want to cover:
 
