@@ -1,9 +1,13 @@
+  /*******************/
+ /* Nav and landing */
+/*******************/
+
 .no-pad {
 	padding-left: 0px;
 	padding-right: 0px;
 }
 
-.txt-style{
+.landing-txt-style{
 	color: white;
 	font-weight: lighter;
 }
@@ -23,3 +27,22 @@ h2 {
 .my-nav {
 	margin-bottom: 0px !important;
 }
+
+  /******************/
+ /* Section Titles */
+/******************/
+
+
+.txt-style{
+	color: gray;
+	font-weight: lighter;
+}
+
+li {
+	list-style: none;
+}
+
+footer {
+	margin-left: 100px;
+}
+
