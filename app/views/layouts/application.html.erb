@@ -10,11 +10,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- Latest compiled and minified CSS -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    
+
   </head>
 
   <body>
     <%= render "navbar" %>
     <%= yield %>
+
+    <script type="text/javascript">
+      function checkScroll(){
+        var startY = $('.navbar').height() * 8; //The point where the navbar changes in px
+
+        if($(window).scrollTop() > startY){
+          $('.navbar').addClass("scrolled");
+        }else{
+          $('.navbar').removeClass("scrolled");
+        }
+      } 
+
+      if($('.navbar').length > 0){
+        $(window).on("scroll load resize", function(){
+        checkScroll();
+        });
+      }
+    </script>
   </body>
 </html>

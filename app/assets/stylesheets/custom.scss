@@ -18,6 +18,7 @@
 }
 
 .my-nav {
+	background: transparent !important;
 	margin-bottom: 0px !important;
     min-height:100%;
     border: 0px !important;
@@ -26,7 +27,31 @@
     	font-weight: lighter !important;
     	font-size: 1.2em !important;
     	padding-right: 20px !important;
+    	color: white !important;
     } 
+}
+
+  /*****************/
+ /* Scrolling Nav */
+/*****************/
+
+.navbar {
+    -webkit-transition: all 0.6s ease-out !important;
+    -moz-transition: all 0.6s ease-out !important;
+    -o-transition: all 0.6s ease-out !important;
+    -ms-transition: all 0.6s ease-out !important;
+    transition: all 0.6s ease-out !important;
+}
+
+.navbar.scrolled {
+    background: rgb(68, 68, 68) !important; //IE
+    background: rgba(0, 0, 0, 0.78) !important; //NON-IE
+}
+
+
+
+#name {
+	font-size: 1.6em !important;
 }
 
   /******************/
@@ -42,5 +67,4 @@
 li {
 	list-style: none;
 }
-
 
