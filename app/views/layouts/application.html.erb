@@ -10,13 +10,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- Latest compiled and minified CSS -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
+    <!-- Light box -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.js"></script>
   </head>
 
   <body>
     <%= render "navbar" %>
     <%= yield %>
 
+    <!-- Nav bar scroll start -->
     <script type="text/javascript">
       function checkScroll(){
         var startY = $('.navbar').height() * 1.5; //The point where the navbar changes in px
@@ -33,6 +38,14 @@
         checkScroll();
         });
       }
+    </script>
+
+    <!-- Light box start-->
+    <script>
+      $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+      });
     </script>
   </body>
 </html>
