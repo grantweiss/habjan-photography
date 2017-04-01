@@ -1,9 +1,21 @@
-<%= form_for @message, url: create_message_url do |f| %>
-  <%= notice %>
-  <%= @message.errors.full_messages.join(', ') %>
+<div class="no-pad image-text">
+    <%= image_tag("cityCopy.png", :alt => "Habjan Photography", class: "img-fluid") %>
+</div>
 
-  <%= f.text_field :name, placeholder: 'name' %>
-  <%= f.email_field :email, placeholder: 'email' %>
-  <%= f.text_area :body, placeholder: 'body' %>
-  <%= f.submit 'Send' %>
-<% end %>
+<div class="container">
+	<form>
+	<h2 class="text-center txt-style">Let's Talk</h2>
+	  <div class="form-group">
+		<%= form_for @message, url: create_message_url do |f| %>
+		    <%= notice %>
+		    <%= @message.errors.full_messages.join(', ') %>
+
+		    <%= f.text_field :name, placeholder: 'name', class: "form-control" %>
+		    <%= f.email_field :email, placeholder: 'email', class: "form-control"  %>
+		    <%= f.text_area :body, placeholder: 'body', class: "form-control"  %>
+		    <%= f.submit 'Send', class: "btn btn-primary" %>
+		  <% end %>
+		</div>
+	</form>
+</div>
+
