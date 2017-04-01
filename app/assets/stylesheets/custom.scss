@@ -37,9 +37,15 @@
 }
 
 @media only screen and (max-width: 766px) {
-.collapse, .collapsing, .in {background: rgba(0, 0, 0, 0.78);}
-.collapse, .collapsing ul li a, .in ul li a {color: white !important;}
-.collapse, .collapsing ul li a:hover, .in ul li a:hover {color: gray !important;}
+   a.nav-link:hover {color: gray !important;}
+  .navbar-nav .nav-item .nav-link,
+  .collapse, .collapsing {
+    background: rgba(0, 0, 0, 0.78);
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding-left: 1rem;
+  }
+
 }
 
 
