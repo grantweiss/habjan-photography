@@ -1,104 +1,93 @@
 <div class="no-pad image-text">
-	<%= image_tag("cityCopy.png", :alt => "Habjan Photography", class: "img-responsive") %>
+    <%= image_tag("cityCopy.png", :alt => "Habjan Photography", class: "img-fluid") %>
 </div>
 
-  <!-- Page Content -->
-    <div class="container">
+<div class="container">
 
-        <div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header text-center txt-style">My Work</h1>
+    </div>
 
-            <div class="col-lg-12">
-                <h1 class="page-header text-center txt-style">My Work</h1>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="<%= path_to_image("cityTn.png") %>" data-toggle="lightbox">
-                    <%= image_tag("cityTn.png", :alt => "City Scape 1", class: "img-responsive") %>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="row">
+                <a href="<%= path_to_image("city.png") %>" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <%= image_tag("cityTn.png", :alt => "City Scape 1", class: "img-fluid img-thumbnail") %>
+                </a>
+                <a href="<%= path_to_image("city2.png") %>" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <%= image_tag("city2Tn.png", :alt => "City Scape 2", class: "img-fluid img-thumbnail") %>
+                </a>
+                <a href="<%= path_to_image("city3.png") %>" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <%= image_tag("city3Tn.png", :alt => "City Scape 3", class: "img-fluid img-thumbnail") %>
+                </a>
+                <a href="<%= path_to_image("city4.png") %>" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <%= image_tag("city4Tn.png", :alt => "City Scape 4", class: "img-fluid img-thumbnail") %>
                 </a>
             </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <%= image_tag("city2Tn.png", :alt => "City Scape 2", class: "img-responsive") %>
+            <div class="row">
+                <a href="<%= path_to_image("city5.png") %>" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <%= image_tag("city5Tn.png", :alt => "City Scape 5", class: "img-fluid img-thumbnail") %>
+                </a>
+                <a href="<%= path_to_image("birdsEyeCity.png") %>" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <%= image_tag("birdsEyeCityTn.png", :alt => "Birds Eye", class: "img-fluid img-thumbnail") %>
+                </a>
+                <a href="<%= path_to_image("headShot.png") %>" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <%= image_tag("headShotTn.png", :alt => "Head Shot 1", class: "img-fluid img-thumbnail") %>
+                </a>
+                <a href="<%= path_to_image("headShot2.png") %>" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <%= image_tag("headShot2Tn.png", :alt => "Head Shot 2", class: "img-fluid img-thumbnail") %>
                 </a>
             </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <%= image_tag("city3Tn.png", :alt => "City Scape 3", class: "img-responsive") %>
+            <div class="row">
+                <a href="<%= path_to_image("headShot3.png") %>" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <%= image_tag("headShot3Tn.png", :alt => "Head Shot 3", class: "img-fluid img-thumbnail") %>
+                </a>
+                <a href="<%= path_to_image("lookingDown.png") %>" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <%= image_tag("lookingDownTn.png", :alt => "Looking Down", class: "img-responsive img-thumbnail") %>
+                </a>
+                <a href="<%= path_to_image("sply50.png") %>" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <%= image_tag("sply50Tn.png", :alt => "Sply 350", class: "img-fluid img-thumbnail") %>
+                </a>
+                <a href="<%= path_to_image("brownNike.png") %>" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <%= image_tag("brownNikeTn.png", :alt => "Brown Nike", class: "img-fluid img-thumbnail") %>
                 </a>
             </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                   	<%= image_tag("city4Tn.png", :alt => "City Scape 4", class: "img-responsive") %>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <%= image_tag("city5Tn.png", :alt => "City Scape 5", class: "img-responsive") %>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <%= image_tag("birdsEyeCityTn.png", :alt => "Birds Eye", class: "img-responsive") %>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <%= image_tag("headShotTn.png", :alt => "Head Shot 1", class: "img-responsive") %>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <%= image_tag("headShot2Tn.png", :alt => "Head Shot 2", class: "img-responsive") %>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <%= image_tag("headShot3Tn.png", :alt => "Head Shot 3", class: "img-responsive") %>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <%= image_tag("lookingDownTn.png", :alt => "Looking Down", class: "img-responsive") %>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <%= image_tag("sply50Tn.png", :alt => "Sply 350", class: "img-responsive") %>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <%= image_tag("brownNikeTn.png", :alt => "Brown Nike", class: "img-responsive") %>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <%= image_tag("darkNikeTn.png", :alt => "Dark Nike", class: "img-responsive") %>
+            <div class="row">
+                <a href="<%= path_to_image("darkNike.png") %>" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                    <%= image_tag("darkNikeTn.png", :alt => "Dark Nike", class: "img-fluid img-thumbnail") %>
                 </a>
             </div>
         </div>
-
-
-        <!-- Contact -->
-        <h1 class="text-center txt-style">Contact me</h1>
-
-        	<div class="col-xs-6 text-center">
-        		<ul>
-        			<li><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li>
-        			<li><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></li>
-        			<li><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></li>
-        		</ul>
-        	</div>
-        	<div class="col-xs-6">
-        		<ul>
-        			<li>Chris Habjan Photography</li>
-        			<li>email me</li>
-        		</ul>
-        	</div>
     </div>
-    </br>
 
-        <!-- Footer -->
-        <footer class="col-xs-12">
-        	<p> © 2017 Chris Habjan</p>
-        </footer>
+</div>
+
+
+
+<footer class="text-muted">
+  <div class="container">
+    <div class="row">
+
+      <div class="card-fluid align-items-center mx-auto" style="width: 20rem;">
+            <div class="card-block text-center">
+                <h1 class="card-title txt-style">Contact me</h1>
+                <p class="card-text">Chris Habjan Photography</p>
+                <ul class="list-inline">
+                  <li class="list-inline-item"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li>
+                  <li class="list-inline-item"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></li>
+                  <li class="list-inline-item"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></li>
+                </ul>
+                <p class="card-text"><%= mail_to "chrishabjan@gmail.com"  %></p>
+            </div>
+      </div>
+
+
+    </div>
+
+
+    <p>
+      <span class="float-left">&copy; 2017 Chris Habjan</span>
+      <a href="#" class="float-right">⬆️🆙🔝</a>
+    </p>
+  </div>
+</footer>

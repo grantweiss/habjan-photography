@@ -11,16 +11,12 @@
 
 .my-nav {
 	background: transparent !important;
-	margin-bottom: 0px !important;
-    min-height:100%;
-    border: 0px !important;
-    border-radius: 0px !important;
     a {
     	font-weight: lighter !important;
     	font-size: 1.2em !important;
     	padding-right: 20px !important;
     	color: white !important;
-    } 
+    }
 }
 
   /*****************/
@@ -41,9 +37,9 @@
 }
 
 @media only screen and (max-width: 766px) {
-.collapsing, .in {background: rgba(0, 0, 0, 0.78);}
-.collapsing ul li a, .in ul li a {color: white !important;}
-.collapsing ul li a:hover, .in ul li a:hover {color: gray !important;}
+.collapse, .collapsing, .in {background: rgba(0, 0, 0, 0.78);}
+.collapse, .collapsing ul li a, .in ul li a {color: white !important;}
+.collapse, .collapsing ul li a:hover, .in ul li a:hover {color: gray !important;}
 }
 
 
@@ -53,6 +49,11 @@
 	font-weight: 100 !important;
 }
 
+
+.navbar-toggler {
+    margin-top: 10px;
+    color: white;
+}
   /******************/
  /* Section Titles */
 /******************/
@@ -67,8 +68,23 @@ li {
 	list-style: none;
 }
 
+
   /****************/
  /* Contact form */
 /****************/
 
 input, textarea {display: block;}
+
+
+  /*******************************/
+ /* Bootstrap 3 Removed Classes */
+/*******************************/
+.page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.img-thumbnail {
+    margin-bottom: 20px;
+}
