@@ -12,7 +12,8 @@
 .my-nav {
 	background: transparent !important;
     a {
-    	font-weight: lighter !important;
+      font-family: 'Roboto', sans-serif !important;
+      font-weight: 100 !important;
     	font-size: 1.2em !important;
     	padding-right: 20px !important;
     	color: white !important;
@@ -68,6 +69,8 @@
 .txt-style{
 	color: gray;
 	font-weight: lighter;
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 100 !important;
 }
 
 li {
