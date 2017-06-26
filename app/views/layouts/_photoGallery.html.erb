@@ -4,7 +4,7 @@
           <div class="row" %>
             <% photos.compact.each do |photo| %>
               <a href="<%= path_to_image(photo[:image]) %>" data-toggle="lightbox" data-gallery="example-gallery" class="col-6 col-md-3">
-                <%= image_tag(photo[:thumbnail], :alt => photo[:alt], class: "img-fluid img-thumbnail") %>
+                <%= image_tag(photo[:thumbnail], :alt => photo[:alt], class: "img-fluid img-thumbnail grow") %>
               </a>
             <% end %>
           </div>

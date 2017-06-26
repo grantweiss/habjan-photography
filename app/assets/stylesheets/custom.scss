@@ -126,3 +126,14 @@ form {
   padding-bottom: 10px;
   background-color: #f6f6f6;
 }
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.08); }
+
+
+  /*****************/
+ /* Media Queries */
+/*****************/
+
+/* Extra Small Devices, Phones */ 
+
