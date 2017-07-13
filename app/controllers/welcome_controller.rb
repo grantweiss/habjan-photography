@@ -5,7 +5,7 @@ class WelcomeController < ApplicationController
 
   def catone
     @gallery_photos = [
-      {image: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/home_1.png",        thumbnail: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/home_1Tn.png",         alt: "City Scape 1"},
+      {image: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/home_1.png",        thumbnail: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/home_1Tn.png",        alt: "City Scape 1"},
       {image: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/home_2.png",        thumbnail: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/home_2Tn.png",        alt: "City Scape 2"},
       {image: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/home_3.png",        thumbnail: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/home_3Tn.png",        alt: "City Scape 3"},
       {image: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/home_4.png",        thumbnail: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/home_4Tn.png",        alt: "City Scape 4"},
@@ -27,25 +27,24 @@ class WelcomeController < ApplicationController
 
   def catthree
       @gallery_photos = [
-      {image: "temp.png",         thumbnail: "temp.png",           alt: "Temp"},
-      {image: "temp.png",         thumbnail: "temp.png",           alt: "Temp"},
-      {image: "temp.png",         thumbnail: "temp.png",           alt: "Temp"},
-      {image: "temp.png",         thumbnail: "temp.png",           alt: "Temp"},
-      {image: "temp.png",         thumbnail: "temp.png",           alt: "Temp"},
-      {image: "temp.png",         thumbnail: "temp.png",           alt: "Temp"},
-      {image: "temp.png",         thumbnail: "temp.png",           alt: "Temp"},
-      {image: "temp.png",         thumbnail: "temp.png",           alt: "Temp"}
+      {image: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/things_1.png",      thumbnail: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/things_1_Tn.png",     alt: "Things 1"},
+      {image: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/things_2.png",      thumbnail: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/things_2_Tn.png",     alt: "Things 2"},
+      {image: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/things_3.png",      thumbnail: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/things_3_Tn.png",     alt: "Things 3"},
+      {image: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/things_4.png",      thumbnail: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/things_4_Tn.png",     alt: "Things 4"},
+      {image: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/things_5.png",      thumbnail: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/things_5_Tn.png",     alt: "Things 5"},
+      {image: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/things_6.png",      thumbnail: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/things_6_Tn.png",     alt: "Things 6"},
+      {image: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/things_7.png",      thumbnail: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/things_7_Tn.png",     alt: "Things 7"}
     ]
   end
 
   def catfour
       @gallery_photos = [
-      {image: "temp.png",         thumbnail: "temp.png",           alt: "Temp"},
-      {image: "temp.png",         thumbnail: "temp.png",           alt: "Temp"},
-      {image: "temp.png",         thumbnail: "temp.png",           alt: "Temp"},
-      {image: "temp.png",         thumbnail: "temp.png",           alt: "Temp"},
-      {image: "temp.png",         thumbnail: "temp.png",           alt: "Temp"},
-      {image: "temp.png",         thumbnail: "temp.png",           alt: "Temp"}
+      {image: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/travel_1_web.png",  thumbnail: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/travel_1_web_Tn.png", alt: "Travel 1"},
+      {image: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/travel_2_web.png",  thumbnail: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/travel_2_web_Tn.png", alt: "Travel 2"},
+      {image: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/travel_3_web.png",  thumbnail: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/travel_3_web_Tn.png", alt: "Travel 3"},
+      {image: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/travel_4_web.png",  thumbnail: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/travel_4_web_Tn.png", alt: "Travel 4"},
+      {image: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/travel_5_web.png",  thumbnail: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/travel_5_web_Tn.png", alt: "Travel 5"},
+      {image: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/travel_6_web.png",  thumbnail: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/travel_6_web_Tn.png", alt: "Travel 6"}
     ]
   end
 end
