@@ -1,0 +1,18 @@
+<div class="pad-top container">
+	<p id="notice"><%= notice %></p>
+
+	<%= image_tag @image.thumbnail, class: "img img-thumbnail", size: "150x150" %>
+	
+	<p>
+	  <strong>Url:</strong>
+	  <%= link_to @image.url, @image.url %>
+	</p>
+
+	<p>
+	  <strong>Alt:</strong>
+	  <%= @image.alt %>
+	</p>
+
+	<%= link_to 'Edit', edit_image_path(@image) %> |
+	<%= link_to 'Back', images_path %>
+</div>

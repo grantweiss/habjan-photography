@@ -1,9 +1,13 @@
 <div class="row">
   <div class="col-sm-12">
-    <% @images.each do |image| %>
-      <a href="<%= image.url %>" data-toggle="lightbox" data-gallery="example-gallery" class="col-6 col-md-3">
-        <%= image_tag(image.thumbnail, :alt => image.alt, class: "img-fluid img-thumbnail grow") %>
-      </a>
+    <% @images.in_groups_of(4).each do |image_group|%>
+      <div class="row">
+        <% image_group.compact.each do |image|%>
+          <a href="<%= image.url %>" data-toggle="lightbox" data-gallery="example-gallery" class="col-6 col-md-3">
+            <%= image_tag(image.thumbnail, :alt => image.alt, class: "img-fluid img-thumbnail grow") %>
+          </a>
+        <% end %>
+      </div>
     <% end %>
   </div>
 </div>

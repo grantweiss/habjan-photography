@@ -4,13 +4,6 @@ class WelcomeController < ApplicationController
   end
 
   def catone
-    # @gallery_photos = [
-    #   {image: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/home_1.png",        thumbnail: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/home_1Tn.png",        alt: "City Scape 1"},
-    #   {image: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/home_2.png",        thumbnail: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/home_2Tn.png",        alt: "City Scape 2"},
-    #   {image: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/home_3.png",        thumbnail: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/home_3Tn.png",        alt: "City Scape 3"},
-    #   {image: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/home_4.png",        thumbnail: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/home_4Tn.png",        alt: "City Scape 4"},
-    #   {image: "home_5.png",                                                                     thumbnail: "https://s3.us-east-2.amazonaws.com/habjan-photography-images/home_5Tn.png",        alt: "City Scape 5"}
-    # ]
     @images = Image.all
   end
 
