@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-sm-12">
-    <% @images.in_groups_of(4).each do |image_group|%>
+    <% @gallery.images.all.in_groups_of(4).each do |image_group|%>
       <div class="row">
         <% image_group.compact.each do |image|%>
           <a href="<%= image.url %>" data-toggle="lightbox" data-gallery="example-gallery" class="col-6 col-md-3">

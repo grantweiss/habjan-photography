@@ -10,18 +10,11 @@
 <div class="container card-fluid align-items-center mx-auto">
  <!-- Projects Row -->
   <div class="row">
+      <% @galleries.each do |gallery|%>
       <div class="col-md-3 portfolio-item">
-          <%= link_to image_tag("https://s3.us-east-2.amazonaws.com/habjan-photography-images/home_5_index.png", class: "img-fluid grow"),catone_path %>
+          <%= link_to image_tag(gallery.thumbnail, class: "img-fluid grow"), gallery %>
       </div>
-      <div class="col-md-3 portfolio-item">
-         <%= link_to image_tag("https://s3.us-east-2.amazonaws.com/habjan-photography-images/people_index.png", class: "img-fluid grow"),cattwo_path %>
-      </div>
-      <div class="col-md-3 portfolio-item">
-          <%= link_to image_tag("https://s3.us-east-2.amazonaws.com/habjan-photography-images/things_index.png", class: "img-fluid grow"),catthree_path %>
-      </div>
-      <div class="col-md-3 portfolio-item">
-          <%= link_to image_tag("https://s3.us-east-2.amazonaws.com/habjan-photography-images/travel_1_index.png", class: "img-fluid grow"),catfour_path %>
-      </div>
+      <% end %>
   </div>
   <!-- /.row -->
 </div>
