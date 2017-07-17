@@ -1,0 +1,33 @@
+<div class="pad-top container">
+  <p id="notice"><%= notice %></p>
+  <h1>Galleries <%= link_to '<i class="fa fa-plus" aria-hidden="true"></i> New Gallery'.html_safe, new_gallery_path, class: "btn btn-success pull-right" %></h1>
+  <div class="container">
+    <div class="row">
+      <% @galleries.each do |gallery|%>
+      <div class="col-sm-6 col-lg-3">
+        <div class="card marg-top">
+
+          <%= image_tag gallery.thumbnail, class: "card-img-top ", height: "200" %>
+          <div class="card-img-overlay">
+          <a href="<%= url_for gallery %>">
+            <h3 class="card-title custom-overlay text-center grow"><%= gallery.name %></h3>
+            </a>
+          </div>
+          </a>
+          <div class="card">
+          <div class="card-block">
+           <p class="card-text"><%= pluralize(gallery.images.count, 'photo') %></p>
+           <p class="card-text"><small class="text-muted">last updated: <%= time_ago_in_words(gallery.images.last.try(:created_at) ? gallery.images.last.created_at : gallery.created_at) %> ago</small></p>
+          </div>
+            <div class="card-footer">
+              <%= link_to '<i class="fa fa-pencil" aria-hidden="true"></i> Edit'.html_safe, edit_gallery_path(gallery), class: "btn btn-secondary btn-sm" %>
+              <%= link_to '<i class="fa fa-picture-o" aria-hidden="true"></i> Add'.html_safe, new_image_path(id: gallery.id), class: "btn btn-secondary btn-sm" %>
+              <%= link_to '<i class="fa fa-trash-o" aria-hidden="true"></i>'.html_safe, gallery, method: :delete, data: { confirm: 'Are you sure?'}, class: "btn btn-danger btn-sm pull-right" %>
+           </div>
+          </div>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>

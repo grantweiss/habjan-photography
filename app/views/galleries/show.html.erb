@@ -1,0 +1,10 @@
+<div class="no-pad image-text">
+    <%= image_tag(@gallery.header, :alt => "Habjan Photography", class: "img-fluid", width: "100%") %>
+</div>
+<p id="notice"><%= notice %></p>
+<div class="col-lg-12">
+  <h1 class="page-header text-center txt-style"><%= @gallery.name %> <%= link_to "Edit", edit_gallery_path(@gallery), class: "pull-right btn btn-secondary btn-sm" %></h1>
+</div>
+<div class="container">
+	<%= render "layouts/photoGallery" %>
+</div>

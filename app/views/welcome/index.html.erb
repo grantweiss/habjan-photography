@@ -1,31 +1,28 @@
 <div class="no-pad image-text">
-    <%= image_tag("https://s3.us-east-2.amazonaws.com/habjan-photography-images/background_final.png", :alt => "Habjan Photography", class: "img-fluid my-img") %>
+    <%= image_tag("https://s3.us-east-2.amazonaws.com/habjan-photography-images/background_final.png", :alt => "Habjan Photography", class: "img-fluid my-img", width: "100%") %>
 </div>
 
 <!-- Start My Work section -->
-<div class="col-lg-12">
-  <h1 id="gallery" class="page-header text-center txt-style">My Work</h1>
-</div>
+
 
 <div class="container card-fluid align-items-center mx-auto">
  <!-- Projects Row -->
-  <div class="row">
-      <div class="col-md-3 portfolio-item">
-          <%= link_to image_tag("https://s3.us-east-2.amazonaws.com/habjan-photography-images/home_5_index.png", class: "img-fluid grow"),catone_path %>
+    <div class="row">
+      <% @galleries.each do |gallery|%>
+      <div class="col-sm-6 col-lg-3">
+      <a href="<%= url_for gallery %>"> 
+        <div class="card marg-top grow">
+          <%= image_tag gallery.thumbnail, class: "card-img-top", height: "200" %>
+          <div class="card-img-overlay">
+            <h3 class="card-title custom-overlay text-center"><%= gallery.name %></h3>
+          </div>
+        </div>
+        </a>
       </div>
-      <div class="col-md-3 portfolio-item">
-         <%= link_to image_tag("https://s3.us-east-2.amazonaws.com/habjan-photography-images/people_index.png", class: "img-fluid grow"),cattwo_path %>
-      </div>
-      <div class="col-md-3 portfolio-item">
-          <%= link_to image_tag("https://s3.us-east-2.amazonaws.com/habjan-photography-images/things_index.png", class: "img-fluid grow"),catthree_path %>
-      </div>
-      <div class="col-md-3 portfolio-item">
-          <%= link_to image_tag("https://s3.us-east-2.amazonaws.com/habjan-photography-images/travel_1_index.png", class: "img-fluid grow"),catfour_path %>
-      </div>
-  </div>
-  <!-- /.row -->
+      <% end %>
+    </div>
 </div>
-
+  <!-- /.row -->
 <div class="bio">
   <%= render 'layouts/bio'%>
 </div>

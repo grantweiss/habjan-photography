@@ -1,0 +1,47 @@
+<%= form_for(image) do |f| %>
+  <% if image.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(image.errors.count, "error") %> prohibited this image from being saved:</h2>
+
+      <ul>
+      <% image.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group row">
+    <%= f.label :url, class: "col-2 col-form-label" %>
+    <div class="col-10">
+      <%= f.text_field :url, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <%= f.label :thumbnail, class: "col-2 col-form-label" %>
+    <div class="col-10">
+      <%= f.text_field :thumbnail, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <%= f.label :alt, class: "col-2 col-form-label" %>
+    <div class="col-10">
+      <%= f.text_field :alt, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <%= f.label :gallery, class: "col-2 col-form-label" %>
+    <div class="col-10">
+      <%= f.collection_select :gallery_id, Gallery.all, :id, :name, {:selected => (params[:id] || 0)}, class: "form-control" %>
+    </div>
+  </div>
+
+  <%= params[:image_gallery_id] %>
+
+  <div class="actions">
+    <%= f.submit class: "btn btn-primary" %>
+  </div>
+<% end %>

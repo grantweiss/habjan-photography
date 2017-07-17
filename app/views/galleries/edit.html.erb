@@ -1,0 +1,36 @@
+<div class="no-pad image-text">
+    <%= image_tag(@gallery.header, :alt => "Habjan Photography", class: "img-fluid", width: "100%") %>
+</div>
+<p id="notice"><%= notice %></p>
+<div class="col-lg-12">
+  <h1 class="page-header text-center txt-style"><%= @gallery.name %></h1>
+</div>
+
+<div class="container">
+<%= render "form_inline", gallery: @gallery %>
+    <div class="row">
+      <% @gallery.images.all.each do |img|%>
+      <div class="col-sm-6 col-lg-3">
+        <div class="card marg-top">
+
+          <%= image_tag img.thumbnail, class: "card-img-top ", height: "200" %>
+          <div class="card-img-overlay">
+          <a href="<%= url_for img %>">
+          </a>
+          </div>
+          </a>
+          <div class="card">
+          <div class="card-block">
+           
+           <p class="card-text"><small class="text-muted">created: <%= time_ago_in_words(img.created_at) %> ago</small></p>
+          </div>
+            <div class="card-footer">
+              <%= link_to '<i class="fa fa-pencil" aria-hidden="true"></i> Edit'.html_safe, edit_image_path(img), class: "btn btn-secondary btn-sm" %>
+              <%= link_to '<i class="fa fa-trash-o" aria-hidden="true"></i>'.html_safe, img, method: :delete, data: { confirm: 'Are you sure?'}, class: "btn btn-danger btn-sm pull-right" %>
+           </div>
+          </div>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>

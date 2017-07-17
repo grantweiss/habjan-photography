@@ -1,13 +1,13 @@
- <div class="row">
-      <div class="col-sm-12">
-        <% @gallery_photos.in_groups_of(4).each_with_index do |photos, number| %>
-          <div class="row" %>
-            <% photos.compact.each do |photo| %>
-              <a href="<%= path_to_image(photo[:image]) %>" data-toggle="lightbox" data-gallery="example-gallery" class="col-6 col-md-3">
-                <%= image_tag(photo[:thumbnail], :alt => photo[:alt], class: "img-fluid img-thumbnail grow") %>
-              </a>
-            <% end %>
-          </div>
+<div class="row">
+  <div class="col-sm-12">
+    <% @gallery.images.all.in_groups_of(4).each do |image_group|%>
+      <div class="row">
+        <% image_group.compact.each do |image|%>
+          <a href="<%= image.url %>" data-toggle="lightbox" data-gallery="example-gallery" class="col-6 col-md-3">
+            <%= image_tag(image.thumbnail, :alt => image.alt, class: "img-fluid img-thumbnail grow") %>
+          </a>
         <% end %>
       </div>
-    </div>
+    <% end %>
+  </div>
+</div>

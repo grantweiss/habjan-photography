@@ -7,6 +7,15 @@
 	padding-right: 0px;
 }
 
+.pad-top {
+  padding-top: 65px;
+}
+
+.pad-top-sm {
+  padding-top: 35px;
+}
+
+
 .my-nav {
 	background: transparent !important;
     a {
@@ -15,6 +24,17 @@
     	font-size: 1.2em !important;
     	padding-right: 20px !important;
     	color: white !important;
+    }
+}
+
+.secondary-nav {
+  background: black !important;
+    a {
+      font-family: 'Roboto', sans-serif !important;
+      font-weight: 100 !important;
+      font-size: 1.2em !important;
+      padding-right: 20px !important;
+      color: white !important;
     }
 }
 
@@ -130,7 +150,28 @@ form {
 .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.08); }
 
+.marg-top {
+  margin-top: 15px;
+}
 
+.custom-overlay {
+  color: white;
+  padding-top: 40px;
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 100 !important;
+  font-size: 2.8rem !important;   
+}
+
+.card-img-overlay {
+  a {
+    text-decoration: none !important;
+  }
+}
+
+.form-control {
+  margin-top: 5px !important;
+  margin-bottom: 30px !important;
+}
   /*****************/
  /* Media Queries */
 /*****************/
