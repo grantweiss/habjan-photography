@@ -11,22 +11,25 @@
     </div>
   <% end %>
 
-  <div class="field">
+<form>
+  <div class="form-group">
     <%= f.label :name %>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :header %>
-    <%= f.text_field :header %>
+    <%= f.text_field :header, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :thumbnail %>
-    <%= f.text_field :thumbnail %>
+    <%= f.text_field :thumbnail, class: "form-control" %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Update Gallery', class: "btn btn-primary" %>
   </div>
-<% end %>
+  <% end %>
+</form>
+

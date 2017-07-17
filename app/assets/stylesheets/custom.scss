@@ -8,7 +8,7 @@
 }
 
 .pad-top {
-  padding-top: 50px;
+  padding-top: 65px;
 }
 
 
@@ -20,6 +20,17 @@
     	font-size: 1.2em !important;
     	padding-right: 20px !important;
     	color: white !important;
+    }
+}
+
+.secondary-nav {
+  background: black !important;
+    a {
+      font-family: 'Roboto', sans-serif !important;
+      font-weight: 100 !important;
+      font-size: 1.2em !important;
+      padding-right: 20px !important;
+      color: white !important;
     }
 }
 
@@ -144,13 +155,18 @@ form {
   padding-top: 40px;
   font-family: 'Roboto', sans-serif !important;
   font-weight: 100 !important;
-  font-size: 4.0rem !important;   
+  font-size: 2.8rem !important;   
 }
 
 .card-img-overlay {
   a {
     text-decoration: none !important;
   }
+}
+
+.form-control {
+  margin-top: 5px !important;
+  margin-bottom: 30px !important;
 }
   /*****************/
  /* Media Queries */
