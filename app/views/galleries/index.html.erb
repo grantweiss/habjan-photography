@@ -1,33 +1,28 @@
 <div class="pad-top container">
   <p id="notice"><%= notice %></p>
+  <h1>Galleries <%= link_to 'New Gallery', new_gallery_path, class: "btn btn-success pull-right" %></h1>
+  <div class="container">
+    <div class="row">
+      <% @galleries.each do |gallery|%>
+      <div class="col-sm-6 col-lg-3">
+        <div class="card marg-top">
 
-  <h1>Galleries</h1>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Header</th>
-        <th>Thumbnail</th>
-        <th colspan="3"></th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <% @galleries.each do |gallery| %>
-        <tr>
-          <td><%= gallery.name %></td>
-          <td><%= gallery.header %></td>
-          <td><%= gallery.thumbnail %></td>
-          <td><%= link_to 'Show', gallery %></td>
-          <td><%= link_to 'Edit', edit_gallery_path(gallery) %></td>
-          <td><%= link_to 'Destroy', gallery, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr>
+          <%= image_tag gallery.thumbnail, class: "card-img-top ", height: "200" %>
+          <div class="card-img-overlay">
+          <a href="<%= url_for gallery %>">
+            <h3 class="card-title custom-overlay text-center grow"><%= gallery.name %></h3>
+            </a>
+          </div>
+          </a>
+          <div class="card">
+          <div class="card-block">
+           <%= link_to 'Edit', edit_gallery_path(gallery), class: "btn btn-warning" %>
+           <%= link_to 'Delete', gallery, method: :delete, data: { confirm: 'Are you sure?'}, class: "btn btn-danger" %>
+          </div>
+          </div>
+        </div>
+      </div>
       <% end %>
-    </tbody>
-  </table>
-
-  <br>
-
-  <%= link_to 'New Gallery', new_gallery_path %>
+    </div>
+  </div>
 </div>

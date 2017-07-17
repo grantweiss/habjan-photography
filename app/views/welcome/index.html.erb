@@ -9,16 +9,22 @@
 
 <div class="container card-fluid align-items-center mx-auto">
  <!-- Projects Row -->
-  <div class="row">
+    <div class="row">
       <% @galleries.each do |gallery|%>
-      <div class="col-md-3 portfolio-item">
-          <%= link_to image_tag(gallery.thumbnail, class: "img-fluid grow"), gallery %>
+      <div class="col-sm-6 col-lg-3">
+      <a href="<%= url_for gallery %>"> 
+        <div class="card marg-top grow">
+          <%= image_tag gallery.thumbnail, class: "card-img-top", height: "200" %>
+          <div class="card-img-overlay">
+            <h3 class="card-title custom-overlay text-center"><%= gallery.name %></h3>
+          </div>
+        </div>
+        </a>
       </div>
       <% end %>
-  </div>
-  <!-- /.row -->
+    </div>
 </div>
-
+  <!-- /.row -->
 <div class="bio">
   <%= render 'layouts/bio'%>
 </div>
