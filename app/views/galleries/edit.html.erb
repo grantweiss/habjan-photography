@@ -7,7 +7,7 @@
 </div>
 
 <div class="container">
-
+<%= render "form_inline", gallery: @gallery %>
     <div class="row">
       <% @gallery.images.all.each do |img|%>
       <div class="col-sm-6 col-lg-3">
@@ -34,14 +34,3 @@
       <% end %>
     </div>
   </div>
-
-
-
-<div class="pad-top container">
-	<h1>Editing Gallery</h1>
-
-	<%= render 'form', gallery: @gallery %>
-
-	<%= link_to 'Show', @gallery %> |
-	<%= link_to 'Back', galleries_path %>
-</div>
