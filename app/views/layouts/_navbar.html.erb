@@ -15,6 +15,17 @@
       <li class="nav-item">
         <a class="nav-link" href="/contact-me">Contact</a>
       </li>
+      <% if logged_in? %>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp; <%= current_user.name %>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Me</a>
+            <%= link_to "Log out", logout_path, method: :delete, class: "dropdown-item" %>
+          </div>
+        </li>
+      <% end %>
     </ul>
   </div>
 </nav>
