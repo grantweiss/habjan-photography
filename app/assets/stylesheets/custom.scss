@@ -23,17 +23,15 @@
       font-weight: 100 !important;
     	font-size: 1.2em !important;
     	padding-right: 20px !important;
-    	color: white;
       text-decoration: none;
     }
-    a:hover, a:active {
+
+    .nav-item a:link, a:visited, a:hover, a:active {
       color: white;
     }
+
     .dropdown-item {
-      color: black;
-      a:hover, a:active {
-        color: black;
-      }
+      color: black !important;
     }
 }
 
@@ -45,6 +43,14 @@
       font-size: 1.2em !important;
       padding-right: 20px !important;
       color: white !important;
+    }
+
+    .nav-item a:link, a:visited, a:hover, a:active {
+      color: white;
+    }
+
+    .dropdown-item {
+      color: black !important;
     }
 }
 
@@ -169,7 +175,7 @@ form {
   padding-top: 40px;
   font-family: 'Roboto', sans-serif !important;
   font-weight: 100 !important;
-  font-size: 2.8rem !important;   
+  font-size: 2.8rem !important;
 }
 
 .card-img-overlay {
