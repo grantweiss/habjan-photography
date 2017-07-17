@@ -23,7 +23,17 @@
       font-weight: 100 !important;
     	font-size: 1.2em !important;
     	padding-right: 20px !important;
-    	color: white !important;
+    	color: white;
+      text-decoration: none;
+    }
+    a:hover, a:active {
+      color: white;
+    }
+    .dropdown-item {
+      color: black;
+      a:hover, a:active {
+        color: black;
+      }
     }
 }
 
