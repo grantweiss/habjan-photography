@@ -1,5 +1,7 @@
 class ImagesController < ApplicationController
   before_action :set_image, only: [:show, :edit, :update, :destroy]
+  before_action :logged_in_user
+
 
   # GET /images
   # GET /images.json
@@ -70,5 +72,12 @@ class ImagesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def image_params
       params.require(:image).permit(:url, :thumbnail, :alt, :gallery_id)
+    end
+
+    # Confirms a logged-in user.
+    def logged_in_user
+      unless logged_in?
+        redirect_to root_url
+      end
     end
 end

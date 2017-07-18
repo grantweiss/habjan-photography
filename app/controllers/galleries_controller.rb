@@ -1,5 +1,6 @@
 class GalleriesController < ApplicationController
   before_action :set_gallery, only: [:show, :edit, :update, :destroy]
+  before_action :logged_in_user, only: [:edit, :update, :destroy, :create, :new]
 
   # GET /galleries
   # GET /galleries.json
@@ -70,5 +71,12 @@ class GalleriesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def gallery_params
       params.require(:gallery).permit(:name, :header, :thumbnail)
+    end
+
+    # Confirms a logged-in user.
+    def logged_in_user
+      unless logged_in?
+        redirect_to root_url
+      end
     end
 end
